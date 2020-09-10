@@ -6,9 +6,7 @@ import { readFileSync } from 'fs';
 
 import pkg from './package.json';
 
-const header = readFileSync(`${__dirname}/dist/annotations.js`)
-                + '\n'
-                + readFileSync('header.js', 'utf-8');
+const header = readFileSync('header.js', 'utf-8');
 
 export default [
 	{
